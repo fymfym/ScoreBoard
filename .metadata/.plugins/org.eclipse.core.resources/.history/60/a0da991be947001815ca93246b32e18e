@@ -1,0 +1,20 @@
+/*
+ * Timer.h
+ *
+ *  Created on: 25/05/2015
+ *      Author: Keld
+ */
+
+
+
+#ifndef TIMER_H_
+#define TIMER_H_
+
+extern unsigned int Sek_Flag;           // sættes 1 gang / sek
+extern int Sek_count;                   // Tids tæller i timer int
+extern unsigned int Tik;                // sættes 5 gange / sek
+
+extern unsigned int ms100_Flag;         // Millisekundt flag -
+extern int msCount;                     // Millisekundt tæller
+
+#endif /* TIMER_H_ */

@@ -1,0 +1,13 @@
+syntax: glob
+*/.metadata/*
+*/bin/Debug/*
+*/obj/Debug/*
+*/.jxbrowser-data/*
+*/.settings/*
+*/RoUr_Lys/Debug/*
+*/*.suo
+*/Debug/*
+*db.lock
+*/storage.ide
+private_key.ppk
+public_key
