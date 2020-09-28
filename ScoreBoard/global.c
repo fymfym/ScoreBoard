@@ -1,3 +1,4 @@
+
 #include "global.h"
 
 unsigned char RS485RX_BUFFER;

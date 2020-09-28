@@ -1,70 +1,8 @@
 
 **** Build of configuration Debug for project Timer ****
 
-"D:\\Program files\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-'Building file: ../RS485.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="RS485.d_raw"  "../RS485.c"
-'Finished building: ../RS485.c'
-' '
-'Building file: ../Timer.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
-'Finished building: ../Timer.c'
-' '
-'Building file: ../Init.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="Init.d_raw"  "../Init.c"
-'Finished building: ../Init.c'
-' '
-'Building file: ../global.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="global.d_raw"  "../global.c"
-"../global.c", line 8: remark #1535-D: (ULP 8.1) variable "DataBufferData" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
-'Finished building: ../global.c'
-' '
-'Building file: ../functions.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="functions.d_raw"  "../functions.c"
-'Finished building: ../functions.c'
-' '
-'Building file: ../blinker.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blinker.d_raw"  "../blinker.c"
-'Finished building: ../blinker.c'
-' '
-'Building file: ../main.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
-"../main.c", line 54: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 60: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 66: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 72: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 78: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 84: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 90: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 96: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
-"../main.c", line 34: remark #1535-D: (ULP 8.1) variable "Sek_count" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
-'Finished building: ../main.c'
-' '
-'Building file: ../handledatabuffer.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
-"../handledatabuffer.c", line 137: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-'Finished building: ../handledatabuffer.c'
-' '
-'Building file: ../rxbuffer.c'
-'Invoking: MSP430 Compiler'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/Program files/ti/ccsv7/ccs_base/msp430/include" --include_path="D:/data/projects/Point tavle/Git/ScoreBoard/Timer" --include_path="D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="rxbuffer.d_raw"  "../rxbuffer.c"
-'Finished building: ../rxbuffer.c'
-' '
-'Building target: Timer.out'
-'Invoking: MSP430 Linker'
-"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"Timer.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/Program files/ti/ccsv7/ccs_base/msp430/include" -i"D:/Program files/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"D:/Program files/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Timer_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Timer.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./functions.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "./rxbuffer.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
-<Linking>
-remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-'Finished building target: Timer.out'
-' '
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'Timer.out' is up to date.
 
 **** Build Finished ****

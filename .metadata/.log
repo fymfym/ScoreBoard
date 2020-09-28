@@ -207,3 +207,284 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.
 
 !ENTRY org.eclipse.cdt.core 1 0 2018-04-24 19:47:07.562
 !MESSAGE Indexed 'Timer' (11 sources, 26 headers) in 0,617 sec: 1.417 declarations; 2.368 references; 0 unresolved inclusions; 5 syntax errors; 1 unresolved names (0,026 %)
+!SESSION 2020-09-23 08:44:40.247 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-09-23 08:45:29.064
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-09-23 08:45:29.067
+!MESSAGE debugServerDir=C:/ti/ccs1010/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2020-09-23 08:45:40.016
+!MESSAGE Removing part descriptor with the 'com.ti.grace.ui.snippets.views.SnippetsView' id and the 'Grace Snippets' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-09-23 08:45:44.772
+!MESSAGE CCS IDE session started!
+	CCS build: 10.1.0.00010 (previously: 7.2.0.201708221200)
+	CCS location: C:/ti/ccs1010/ccs (previously: D:/Program files/ti/ccsv7)
+	Workspace location: C:/data/projects/Point tavle/Git/ScoreBoard (previously: )
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:44.977
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:44.979
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:44.980
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:44.982
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:44.983
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:45.007
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:45.041
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:45.279
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:45.303
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-23 08:45:45.388
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-09-23 08:45:45.454
+!MESSAGE CCS HTTP adapter started! [ccs.port:52405] - Open 'http://localhost:52405/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-09-23 08:45:49.990
+!MESSAGE Indexed 'ScoreBoard' (8 sources, 20 headers) in 1,81 sec: 1.232 declarations; 2.116 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-09-23 08:45:50.372
+!MESSAGE Indexed 'Timer' (9 sources, 21 headers) in 0,366 sec: 1.241 declarations; 2.117 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2020-09-28 15:16:49.119 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-09-28 15:18:17.851
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-09-28 15:18:17.854
+!MESSAGE debugServerDir=C:/ti/ccs1010/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-09-28 15:18:34.820
+!MESSAGE CCS IDE session started!
+	CCS build: 10.1.0.00010
+	CCS location: C:/ti/ccs1010/ccs
+	Workspace location: C:/data/projects/Point tavle/Git/ScoreBoard
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.284
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.285
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.286
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.289
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.290
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.310
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.520
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.536
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.558
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:18:35.645
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-09-28 15:18:35.741
+!MESSAGE CCS HTTP adapter started! [ccs.port:55670] - Open 'http://localhost:55670/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.ui 2 2 2020-09-28 15:20:46.164
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:22:12.606
+!MESSAGE DS_ERROR: Error initializing emulator:
+No USB FET was found
+!SESSION 2020-09-28 15:28:38.622 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-09-28 15:29:56.573
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-09-28 15:29:56.575
+!MESSAGE debugServerDir=C:/ti/ccs1010/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-09-28 15:30:06.491
+!MESSAGE CCS IDE session started!
+	CCS build: 10.1.0.00010
+	CCS location: C:/ti/ccs1010/ccs
+	Workspace location: C:/data/projects/Point tavle/Git/ScoreBoard
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.636
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.638
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.639
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.642
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.643
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.651
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.654
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.657
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.660
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-09-28 15:30:06.672
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2020-09-28 15:30:06.727
+!MESSAGE CCS HTTP adapter started! [ccs.port:55851] - Open 'http://localhost:55851/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-09-28 15:32:28.057
+!MESSAGE Deadlock detected. All locks owned by thread Worker-1: Building Targets will be suspended.
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.core.internal.jobs.DeadlockDetector.reportDeadlock(DeadlockDetector.java:604)
+	at org.eclipse.core.internal.jobs.DeadlockDetector.lockWaitStart(DeadlockDetector.java:408)
+	at org.eclipse.core.internal.jobs.LockManager.addLockWaitThread(LockManager.java:147)
+	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:307)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:205)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:95)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:298)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2242)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2287)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor.updateProjectCoreModel(ProjectStateMonitor.java:746)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor.updateProjectCoreModel(ProjectStateMonitor.java:793)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:405)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:366)
+	at org.eclipse.core.internal.resources.Workspace.aboutToBuild(Workspace.java:309)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:556)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at org.eclipse.cdt.make.internal.core.MakeTarget$1.run(MakeTarget.java:370)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.make.internal.core.MakeTarget.build(MakeTarget.java:381)
+	at org.eclipse.cdt.make.ui.TargetBuild$1$1.run(TargetBuild.java:122)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.make.ui.TargetBuild$1.run(TargetBuild.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2020-09-28 15:32:28.058
+!MESSAGE Thread Worker-1: Building Targets has locks: OrderedLock (0) and is waiting for lock R/
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2020-09-28 15:32:28.058
+!MESSAGE Thread Worker-11: Refreshing built-in compiler settings has locks: R/ and is waiting for lock OrderedLock (0)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:38:04.090
+!MESSAGE DS_ERROR: MSP430: Can't Initialize Target CPU: Failed to open COM65 at 9600 baud: open: The system cannot find the file specified
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:38:04.360
+!MESSAGE DS_ERROR: Can't Initialize Target CPU:
+Failed to open COM65 at 9600 baud: open: The system cannot find the file specified
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-09-28 15:44:20.733
+!MESSAGE Indexed 'ScoreBoard-hw-v2' (1 sources, 5 headers) in 0,126 sec: 759 declarations; 900 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:48.105
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Internal error
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:48.114
+!MESSAGE DS_ERROR: Error connecting to the target:
+Internal error
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:51.001
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Internal error
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:51.047
+!MESSAGE DS_ERROR: Error connecting to the target:
+Internal error
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:52.137
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Internal error
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:52.188
+!MESSAGE DS_ERROR: Error connecting to the target:
+Internal error
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:58.697
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Internal error
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:58.751
+!MESSAGE DS_ERROR: Error connecting to the target:
+Internal error
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:59.437
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Internal error
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:48:59.482
+!MESSAGE DS_ERROR: Error connecting to the target:
+Internal error
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:49:05.851
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Internal error
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:49:05.895
+!MESSAGE DS_ERROR: Error connecting to the target:
+Internal error
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:49:06.985
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Internal error
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-09-28 15:49:07.029
+!MESSAGE DS_ERROR: Error connecting to the target:
+Internal error
