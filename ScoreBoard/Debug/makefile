@@ -17,7 +17,6 @@ ORDERED_OBJS += \
 "./global.obj" \
 "./handledatabuffer.obj" \
 "./main.obj" \
-"./rxbuffer.obj" \
 "../lnk_msp430f5419a.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibmath.a \
@@ -162,8 +161,8 @@ ScoreBoard.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Init.obj" "RS485.obj" "Timer.obj" "blinker.obj" "global.obj" "handledatabuffer.obj" "main.obj" "rxbuffer.obj" 
-	-$(RM) "Init.d" "RS485.d" "Timer.d" "blinker.d" "global.d" "handledatabuffer.d" "main.d" "rxbuffer.d" 
+	-$(RM) "Init.obj" "RS485.obj" "Timer.obj" "blinker.obj" "global.obj" "handledatabuffer.obj" "main.obj" 
+	-$(RM) "Init.d" "RS485.d" "Timer.d" "blinker.d" "global.d" "handledatabuffer.d" "main.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

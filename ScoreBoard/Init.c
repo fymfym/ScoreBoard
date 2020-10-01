@@ -47,8 +47,8 @@ void Init(void)                                        // hvis det går godt retu
 
     // 7-seg #1
     P4DIR = BIT7+BIT6+BIT5+BIT4+BIT3+BIT2+BIT1+BIT0;        // Port 4 output direction output all, 0b = Port configured as input, 1b = Port configured as output
-    P4REN = 0;                                              // Port 4 Resistor Enable
-    P4OUT = 0 ;                                             // Port 4 Pullup / Pulldown
+    P4REN = 0 ;                                             // Port 4 Resistor Enable
+    P4OUT = 255 ;                                             // Port 4 Pullup / Pulldown
     P4DS  = 0 ;                                             // Port 4 Output Drive Strength Registers
     P4SEL = 0 ;                                             // Port 4 Function Select Registers
 
@@ -74,9 +74,9 @@ void Init(void)                                        // hvis det går godt retu
     P7SEL = 0 ;                                             // Port 7 Function Select Registers
 
     // Pin input from plug
-    P8DIR = BIT7+BIT6+BIT5+BIT4+BIT3+BIT2+BIT1+BIT0 ;       // Port 8 output direction output , 0b = Port configured as input, 1b = Port configured as output
-    P8REN = 0 ;                                             // Port 8 Resistor Enable
-    P8OUT = 0 ;                                             // Port 8 Pullup / Pulldown
+    P8DIR = 0 ;                                             // Port 8 output direction output , 0b = Port configured as input, 1b = Port configured as output
+    P8REN = BIT7+BIT6+BIT5+BIT4+BIT3+BIT2+BIT1+BIT0 ;       // Port 8 Resistor Enable
+    P8OUT = BIT7+BIT6+BIT5+BIT4+BIT3+BIT2+BIT1+BIT0 ;       // Port 8 Pullup / Pulldown
     P8DS  = 0 ;                                             // Port 8 Output Drive Strength Registers
     P8SEL = 0 ;                                             // Port 8 Function Select Registers
 
@@ -172,7 +172,7 @@ void Init(void)                                        // hvis det går godt retu
 
     __bis_SR_register( GIE);                  // LPM0, ADC10_ISR will force exit
 
-    P4OUT = 255;                              // Sluk alle 7-seg
-    P10OUT = 255;                             // Sluk alle 7-seg
+    P4OUT = 0;                              // Sluk alle 7-seg
+    P10OUT = 0;                             // Sluk alle 7-seg
 
 }

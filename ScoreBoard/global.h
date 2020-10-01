@@ -1,18 +1,12 @@
 #ifndef FILE_GLOBAL_SEEN
 #define FILE_GLOBAL_SEEN
 
-
-extern unsigned char DataBuffer[20];
-extern unsigned char DataBufferIndex;
-extern unsigned char DataBufferData;
+unsigned char RS485RX_BUFFER;
+int RS485RX_BUFFER_DATA_PRESENT;
 
 extern unsigned char SettingSwitch;
 
 extern unsigned int PwmSegmentValue;
-
-extern unsigned int Segment1Value;
-extern unsigned int Segment2Value;
-
 
 extern int BlinkCount;
 extern unsigned char BlinkState;
@@ -25,10 +19,22 @@ extern unsigned int BlinkErrorOffInterval;
 
 extern const unsigned char SETTINGSILENT;
 
-extern unsigned char InputSignal1;
-extern unsigned char InputSignal2;
+extern unsigned char Button1Pressed;
+extern unsigned char Button2Pressed;
+extern unsigned char Button3Pressed;
+
+extern unsigned int InputSignal1;
+extern unsigned int InputSignal2;
+extern unsigned int InputSignal3;
+
 extern unsigned char DigitalLedState;
 
 extern const int DIGITALINPUTREPEATCONSTANT;
+
+struct commandStruct
+{
+    unsigned char commandByte;
+    unsigned char dataByte;
+};
 
 #endif /* #endif FILE_FOO_SEEN */

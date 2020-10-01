@@ -9,4 +9,14 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 	</section>
+	<section name="com.ti.ccstudio.project.ui.internal.wizards.importexport.ProjectImportPage">
+	</section>
+	<section name="com.ti.ccstudio.project.ui.internal.wizards.project.ProjectSettingsPage">
+		<item key="CCS.TARGET" value="devices/MSP430F5419A.xml"/>
+		<section name="1">
+			<item key="CCS.OUTPUT_TYPE" value="executable"/>
+			<item key="CCS.LINKER_COMMAND_FILE" value="null"/>
+			<item key="CCS.RUNTIME_SUPPORT_LIB" value="null"/>
+		</section>
+	</section>
 </section>

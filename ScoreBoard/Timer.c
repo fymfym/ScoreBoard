@@ -9,7 +9,8 @@
 
 int msCount;
 
-
+static const unsigned int MaxButtonCount = 200;
+static const unsigned int ButtonPressed = 25;
 
 /*
     The TIMER0_A0_VECTOR is exclusively used for the CCR0 capture/compare event.
@@ -27,8 +28,8 @@ int msCount;
 #pragma vector=TIMER0_A0_VECTOR
 __interrupt void TIMER0_A0_ISR (void)
 {
-    P4OUT = Segment1Value;
-    P10OUT = Segment2Value;
+    // Turn LED ON on set value
+    //P1OUT = 6;
 }
 
 #pragma vector=TIMER0_A1_VECTOR
@@ -40,8 +41,8 @@ __interrupt void TIMER0_A1_ISR (void)
             break;
 
         case 14:
-            P4OUT = 255;
-            P10OUT = 255;
+            // Turn LEDS off
+            //P1OUT = 0;
             break;
     }
     //TAIFG = 0;
@@ -61,7 +62,7 @@ __interrupt void TIMER1_A1_ISR (void)
               Sek_count --;                                     // tæl tid ned
               if (Sek_count <= 0)                               // se om den er blivet 0
               {
-                  Sek_count = 45;                                // vendt 0,5 sek. igen
+                  Sek_count = 45;                                // vent 0,5 sek. igen
                   Sek_Flag = 1;                                 // flag at der er gået et sek
               }
 
@@ -72,23 +73,60 @@ __interrupt void TIMER1_A1_ISR (void)
                   msCount = 2;
               }
 
-              if ( (P4IN & BIT0)==BIT0)
+              // Button 1
+              if ( (P8IN & BIT0)==BIT0)
               {
-                  if (InputSignal1 < DIGITALINPUTREPEATCONSTANT) InputSignal1++;
+                  if (InputSignal1 < MaxButtonCount)
+                  {
+                      InputSignal1++;
+                      if (InputSignal1 > ButtonPressed && Button1Pressed == 0)
+                      {
+                          Button1Pressed = 1;
+                      }
+                  }
               }
               else
               {
                   if (InputSignal1 > 0) InputSignal1--;
+                  if (InputSignal1 == 0) Button1Pressed = 0;
               }
 
-              if ( (P4IN & BIT1)==BIT1)
+              // Button 2
+              if ( (P8IN & BIT1)==BIT1)
               {
-                  if (InputSignal2 < DIGITALINPUTREPEATCONSTANT) InputSignal2++;
+                  if (InputSignal2 < MaxButtonCount)
+                  {
+                      InputSignal2++;
+                      if (InputSignal2 > ButtonPressed && Button2Pressed == 0)
+                      {
+                          Button2Pressed = 1;
+                      }
+                  }
               }
               else
               {
                   if (InputSignal2 > 0) InputSignal2--;
+                  if (InputSignal2 == 0) Button2Pressed = 0;
               }
+
+              // Button 3
+              if ( (P8IN & BIT2)==BIT2)
+              {
+                  if (InputSignal3 < MaxButtonCount)
+                  {
+                      InputSignal3++;
+                      if (InputSignal3 > ButtonPressed && Button3Pressed == 0)
+                      {
+                          Button3Pressed = 1;
+                      }
+                  }
+              }
+              else
+              {
+                  if (InputSignal3 > 0) InputSignal3--;
+                  if (InputSignal3 == 0) Button3Pressed = 0;
+              }
+
 
               break;
           default: break;							//

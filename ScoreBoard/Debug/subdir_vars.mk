@@ -15,8 +15,7 @@ C_SRCS += \
 ../blinker.c \
 ../global.c \
 ../handledatabuffer.c \
-../main.c \
-../rxbuffer.c 
+../main.c 
 
 C_DEPS += \
 ./Init.d \
@@ -25,8 +24,7 @@ C_DEPS += \
 ./blinker.d \
 ./global.d \
 ./handledatabuffer.d \
-./main.d \
-./rxbuffer.d 
+./main.d 
 
 OBJS += \
 ./Init.obj \
@@ -35,8 +33,7 @@ OBJS += \
 ./blinker.obj \
 ./global.obj \
 ./handledatabuffer.obj \
-./main.obj \
-./rxbuffer.obj 
+./main.obj 
 
 OBJS__QUOTED += \
 "Init.obj" \
@@ -45,8 +42,7 @@ OBJS__QUOTED += \
 "blinker.obj" \
 "global.obj" \
 "handledatabuffer.obj" \
-"main.obj" \
-"rxbuffer.obj" 
+"main.obj" 
 
 C_DEPS__QUOTED += \
 "Init.d" \
@@ -55,8 +51,7 @@ C_DEPS__QUOTED += \
 "blinker.d" \
 "global.d" \
 "handledatabuffer.d" \
-"main.d" \
-"rxbuffer.d" 
+"main.d" 
 
 C_SRCS__QUOTED += \
 "../Init.c" \
@@ -65,7 +60,6 @@ C_SRCS__QUOTED += \
 "../blinker.c" \
 "../global.c" \
 "../handledatabuffer.c" \
-"../main.c" \
-"../rxbuffer.c" 
+"../main.c" 
 
 

@@ -8,16 +8,14 @@
  *
  * Input:
  *      0: Score up
- *      1: Score Down
+ *      1: Score down
  *      2: Reset to Zero
- *      2+0: Light level up
- *      2+1: Light level down
  *
  * Software version:
- *      0.1
+ *      0.2
  *
  * Hardware platform:
- *      Thita Elektronik - A42264P
+ *      Thita Elektronik - A42264P - version 2
  *
  * Author
  *      fym@bitmax.dk
@@ -28,9 +26,9 @@
 #include "global.h"
 #include "handledatabuffer.h"
 #include "blinker.h"
-#include "rxbuffer.h"
 #include "timer.h"
 #include "blinker.h"
+#include "handledatabuffer.h"
 
 unsigned int Sek_Flag;             // settes 1 gang / sek
 int Sek_count;                     // Tids tæller i timer int
@@ -39,67 +37,70 @@ unsigned int temp;                 //
 
 unsigned int ms100_Flag;           // Millisekundt flag -
 int msCount;                       // Millisekundt tæller
+int displayNumber;
+
+int buffer[20];
+unsigned int bufferIndex;
 
 void main(void)
 {
+    bufferIndex = 0;
+
     WDTCTL = WDTPW | WDTHOLD;      // Stop watchdog timer
     Init();                        // Init alle register in cpu
+
+    displayNumber = 0;
+    P1OUT = 6;
 
     PwmSegmentValue = 65500;
     TA0CCR0 = PwmSegmentValue;
 
     Sek_count = 10;
 
-    Segment1Value = 255-BIT2;
-    Segment2Value = 255-BIT4;
+    P4OUT = BIT2;
+    P10OUT = BIT4;
     Sek_Flag = 0;
     while (Sek_Flag==0);                             //  delay 1 sek
     {}
 
-    Segment1Value = 255-BIT3;
-    Segment2Value = 255-BIT3;
+    P4OUT = BIT3;
+    P10OUT = BIT3;
     Sek_Flag = 0;
     while (Sek_Flag==0);                             //  delay 1 sek
     {}
 
-    Segment1Value = 255-BIT4;
-    Segment2Value = 255-BIT2;
+    P4OUT = BIT4;
+    P10OUT = BIT2;
     Sek_Flag = 0;
     while (Sek_Flag==0);                             //  delay 1 sek
     {}
 
-    Segment1Value = 255-BIT5;
-    Segment2Value = 255-BIT1;
+    P4OUT = BIT5;
+    P10OUT = BIT1;
     Sek_Flag = 0;
     while (Sek_Flag==0);                             //  delay 1 sek
     {}
 
-    Segment1Value = 255-BIT0;
-    Segment2Value = 255-BIT0;
+    P4OUT = BIT0;
+    P10OUT = BIT0;
     Sek_Flag = 0;
     while (Sek_Flag==0);                             //  delay 1 sek
     {}
 
-    Segment1Value = 255-BIT1;
-    Segment2Value = 255-BIT5;
+    P4OUT = BIT1;
+    P10OUT = BIT5;
     Sek_Flag = 0;
     while (Sek_Flag==0);                             //  delay 1 sek
     {}
 
-    Segment1Value = 255-BIT6;
-    Segment2Value = 255-BIT6;
+    P4OUT = BIT6;
+    P10OUT = BIT6;
     Sek_Flag = 0;
     while (Sek_Flag==0);                             //  delay 1 sek
     {}
 
-    Segment1Value = 0;
-    Segment2Value = 0;
-    Sek_Flag = 0;
-    while (Sek_Flag==0);                             //  delay 1 sek
-    {}
-
-    Segment1Value = 255;
-    Segment2Value = 255;
+    P4OUT = BIT0 + BIT1 + BIT2 + BIT3 + BIT4 + BIT5;
+    P10OUT = 0;
 
     // Zero PWM
     Sek_Flag = 0;
@@ -122,25 +123,44 @@ void main(void)
             int res = BlinkExecuteTimerTick();
             if (res == 1)
             {
-                P3OUT &= ~(BIT1);                 // sluk keepalive led
+                P3OUT |= BIT1;                    // tænd keepalive led
             }
             else
             {
-                P3OUT |= BIT1;                    // tænd keepalive led
+                P3OUT &= ~(BIT1);                 // sluk keepalive led
             }
             ms100_Flag = 0;
         }
 
-        // If error occures, blink faster
-        if (SettingSwitch == 0xff)
+        if (Button1Pressed == 1)
         {
-                BlinkError();
+            Button1Pressed = 2;
+            if (displayNumber < 99) displayNumber++;
+            SetLedValue(displayNumber);
         }
 
-        // Test for data blink when button held down
+        if (Button2Pressed == 1)
+        {
+            Button2Pressed = 2;
+            if (displayNumber > 0) displayNumber--;
+            SetLedValue(displayNumber);
+        }
+
+        if (Button3Pressed == 1)
+        {
+            Button3Pressed = 2;
+            displayNumber = 0;
+            SetLedValue(displayNumber);
+        }
+
+
+        // Test for data blink when "test" button held down
         if ((P3IN & BIT2) != BIT2)
         {
             BlinkData();
+            displayNumber = 0;
+            P4OUT = 0;
+            P10OUT = 0;
         }
 
         // If "silent" setting is selected - turn off blink led
@@ -150,21 +170,11 @@ void main(void)
         }
 
         // RS485 data packages
-        if (RS485RX_BUFFER > 0)
+        if (commandReady > 0)
         {
             BlinkData();
-            AddByteToRXBuffer(RS485RX_BUFFER);
-            RS485RX_BUFFER = 0;
-            if (DataBufferData == 1)
-            {
-                int sw = (~SettingSwitch & 63);
-                int adr = (DataBuffer[1]-16);
-                if ( sw == adr )
-                {
-                    HandleDataBuffer();
-                }
-                DataBufferData = 0;
-            }
+            HandleDataBuffer(command);
+            commandReady = 0;
         }
 
         TA0CCR0 = PwmSegmentValue;

@@ -2,6 +2,7 @@
 #define FILE_HANDLEBUFFER_SEEN
 
 
-int HandleDataBuffer();
+int HandleDataBuffer(struct commandStruct command);
+int SetLedValue(int value);
 
 #endif /* FILE_HANDLEBUFFER_SEEN */

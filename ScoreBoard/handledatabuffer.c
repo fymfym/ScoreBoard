@@ -39,27 +39,27 @@ int TranslateToSegmentNumber(int Value)
     switch (Value)
     {
     case 0:
-        return 255 - (BIT0 + BIT1 + BIT2 + BIT3 + BIT4 + BIT5);
+        return (BIT0 + BIT1 + BIT2 + BIT3 + BIT4 + BIT5);
     case 1:
-        return 255 - (BIT1 + BIT2);
+        return (BIT1 + BIT2);
     case 2:
-        return 255 - (BIT0 + BIT1+ BIT3 + BIT4 + BIT6);
+        return (BIT0 + BIT1+ BIT3 + BIT4 + BIT6);
     case 3:
-        return 255 - (BIT0 + BIT1 + BIT2 + BIT3 + BIT6);
+        return (BIT0 + BIT1 + BIT2 + BIT3 + BIT6);
     case 4:
-        return 255 - (BIT1 + BIT2 + BIT5 + BIT6);
+        return (BIT1 + BIT2 + BIT5 + BIT6);
     case 5:
-        return 255 - (BIT0 + BIT2 + BIT3 + BIT5 + BIT6);
+        return (BIT0 + BIT2 + BIT3 + BIT5 + BIT6);
     case 6:
-        return 255 - (BIT0 + BIT2 + BIT3 + BIT4 + BIT5 + BIT6);
+        return (BIT0 + BIT2 + BIT3 + BIT4 + BIT5 + BIT6);
     case 7:
-        return 255 - (BIT0 + BIT1 + BIT2);
+        return (BIT0 + BIT1 + BIT2);
     case 8:
-        return 255 - (BIT0 + BIT1 + BIT2 + BIT3 + BIT4 + BIT5 + BIT6);
+        return (BIT0 + BIT1 + BIT2 + BIT3 + BIT4 + BIT5 + BIT6);
     case 9:
-        return 255 - (BIT0 + BIT1 + BIT2 + BIT3 + BIT5 + BIT6);
+        return (BIT0 + BIT1 + BIT2 + BIT3 + BIT5 + BIT6);
     }
-    return 255;
+    return 0;
 }
 
 int TurnOnSegment(int Value, int Segment)
@@ -117,65 +117,52 @@ int TurnOffSegment(int Value, int Segment)
     case 9:
         return Segment | BIT9;
     case 15:
-        return 255;
+        return 0;
     }
     return 0;
 }
 
-int HandleDataBuffer()
+int SetLedValue(int value)
 {
     int tal1;
     int tal2;
-	if (DataBuffer[0] != 3) // Pakkelængde på 3 accepteres
-	{
-		DataBufferIndex = 0;
-		return 0;
-	}
 
-	if ((DataBuffer[3] >= 0x10) && (DataBuffer[3] <= 0x73) )
-	{
-	    tal2 = (DataBuffer[3] - 0x10) / 10;
-	    tal1 = (DataBuffer[3] - 0x10) % 10;
-        Segment1Value = TranslateToSegmentNumber(tal1);
-        if(tal2 > 0)
+    tal2 = value / 10;
+    tal1 = value % 10;
+    P4OUT = TranslateToSegmentNumber(tal1);
+    if(tal2 > 0)
+    {
+        P10OUT = TranslateToSegmentNumber(tal2);
+    }
+    else
+        P10OUT = 0;
+    return 1;
+}
+
+int HandleDataBuffer(struct commandStruct command)
+{
+    switch(command.commandByte)
+    {
+        case 01:
         {
-            Segment2Value = TranslateToSegmentNumber(tal2);
+            SetLedValue(command.dataByte);
+            break;
         }
-        else
-            Segment2Value = 255;
-	}
 
-    //if ((DataBuffer[1] >= 0x70) && (DataBuffer[1] <= 0x7F) )
-    //    Segment2Value = TranslateToSegmentNumber(DataBuffer[1] - 0x70);
+        case 02:
+        {
+            P4OUT = command.dataByte;
+            break;
+        }
 
+        case 03:
+        {
+            P10OUT = command.dataByte;
+            break;
+        }
 
-    if ((DataBuffer[3] >= 0x80) && (DataBuffer[3] <= 0x8F) )
-        Segment1Value = TurnOnSegment(DataBuffer[3] - 0x80, Segment1Value);
-
-    if ((DataBuffer[3] >= 0x90) && (DataBuffer[3] <= 0x9F) )
-        Segment1Value = TurnOffSegment(DataBuffer[3] - 0x90, Segment1Value);
-
-    if ((DataBuffer[3] >= 0xA0) && (DataBuffer[3] <= 0xAF) )
-        Segment2Value = TurnOnSegment(DataBuffer[3] - 0xA0, Segment2Value);
-
-    if ((DataBuffer[3] >= 0xB0) && (DataBuffer[3] <= 0xBF) )
-        Segment2Value = TurnOffSegment(DataBuffer[3] - 0xB0, Segment2Value);
-
-    if ((DataBuffer[3] == 0x74) )
-    {
-        Segment1Value = TranslateToSegmentNumber(0);
-        Segment2Value = TranslateToSegmentNumber(0);
-    }
-
-    if ((DataBuffer[3] == 0x75) )
-    {
-        Segment1Value = 255;
-        Segment2Value = 255;
     }
 
 
-    // Value for intensity: 10-246 (Omformet til 0-235) - 277
-    PwmSegmentValue = 65530 - ((DataBuffer[2]-10)*277);
-
-	return 0;
+    return 0;
 }

@@ -11,7 +11,6 @@ main.obj: ../RS485.h
 main.obj: ../global.h
 main.obj: ../handledatabuffer.h
 main.obj: ../blinker.h
-main.obj: ../rxbuffer.h
 main.obj: ../timer.h
 
 ../main.c: 
@@ -25,5 +24,4 @@ C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include/intrinsics_leg
 ../global.h: 
 ../handledatabuffer.h: 
 ../blinker.h: 
-../rxbuffer.h: 
 ../timer.h: 
