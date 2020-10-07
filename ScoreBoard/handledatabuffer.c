@@ -124,18 +124,32 @@ int TurnOffSegment(int Value, int Segment)
 
 int SetLedValue(int value)
 {
+    P4OUT = 0;
+    P10OUT = 0;
+
+    if (value == 200)
+    {
+        return 1;
+    }
+
     int tal1;
     int tal2;
 
     tal2 = value / 10;
     tal1 = value % 10;
+
     P4OUT = TranslateToSegmentNumber(tal1);
-    if(tal2 > 0)
+    if (value > 99)
     {
-        P10OUT = TranslateToSegmentNumber(tal2);
+        P10OUT = TranslateToSegmentNumber(0);
     }
     else
-        P10OUT = 0;
+    {
+        if(tal2 > 0)
+        {
+            P10OUT = TranslateToSegmentNumber(tal2);
+        }
+    }
     return 1;
 }
 

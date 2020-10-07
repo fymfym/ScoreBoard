@@ -5290,3 +5290,479 @@ Finished building target: "ScoreBoard.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+"../handledatabuffer.c", line 146: warning #551-D: variable "tal2" is used before its value is set
+"../handledatabuffer.c", line 137: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 158: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+Finished building: "../handledatabuffer.c"
+ 
+Building target: "ScoreBoard.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ScoreBoard.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ScoreBoard_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ScoreBoard.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ScoreBoard.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+"../handledatabuffer.c", line 137: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 159: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+Finished building: "../handledatabuffer.c"
+ 
+Building target: "ScoreBoard.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ScoreBoard.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ScoreBoard_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ScoreBoard.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ScoreBoard.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+"../handledatabuffer.c", line 137: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 160: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+Finished building: "../handledatabuffer.c"
+ 
+Building target: "ScoreBoard.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ScoreBoard.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ScoreBoard_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ScoreBoard.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ScoreBoard.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'handledatabuffer.obj' failed
+"../handledatabuffer.c", line 149: error #20: identifier "tal" is undefined
+"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 139: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 161: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+1 error detected in the compilation of "../handledatabuffer.c".
+gmake: *** [handledatabuffer.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 139: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 161: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+Finished building: "../handledatabuffer.c"
+ 
+Building target: "ScoreBoard.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ScoreBoard.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ScoreBoard_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ScoreBoard.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ScoreBoard.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 139: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 156: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+Finished building: "../handledatabuffer.c"
+ 
+Building target: "ScoreBoard.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ScoreBoard.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ScoreBoard_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ScoreBoard.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ScoreBoard.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../global.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="global.d_raw"  "../global.c"
+Finished building: "../global.c"
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 139: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 156: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+Finished building: "../handledatabuffer.c"
+ 
+Building file: "../blinker.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blinker.d_raw"  "../blinker.c"
+Finished building: "../blinker.c"
+ 
+Building file: "../Timer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+"../Timer.c", line 12: remark #1534-D: (ULP 7.1) Detected use of global variable "MaxButtonCount" within one function "TIMER1_A1_ISR". Recommend placing variable in the function locally
+"../Timer.c", line 13: remark #1534-D: (ULP 7.1) Detected use of global variable "ButtonPressed" within one function "TIMER1_A1_ISR". Recommend placing variable in the function locally
+Finished building: "../Timer.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 63: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 69: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 75: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 81: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 87: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 93: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 99: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 34: remark #1535-D: (ULP 8.1) variable "Sek_count" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 43: remark #1535-D: (ULP 8.1) variable "bufferIndex" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building file: "../Init.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="Init.d_raw"  "../Init.c"
+Finished building: "../Init.c"
+ 
+Building file: "../RS485.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="RS485.d_raw"  "../RS485.c"
+"../RS485.c", line 51: warning #121-D: return value type does not match the function type
+"../RS485.c", line 66: warning #2170-D: use of a const variable in a constant expression is nonstandard in C
+"../RS485.c", line 74: warning #2170-D: use of a const variable in a constant expression is nonstandard in C
+"../RS485.c", line 81: warning #2170-D: use of a const variable in a constant expression is nonstandard in C
+"../RS485.c", line 93: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../RS485.c", line 93: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"..\global.h", line 5: remark #1535-D: (ULP 8.1) variable "RS485RX_BUFFER_DATA_PRESENT" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../RS485.c", line 14: remark #1534-D: (ULP 7.1) Detected use of global variable "stateWaitingForAddressByte" within one function "USCI_A0_ISR". Recommend placing variable in the function locally
+"../RS485.c", line 15: remark #1534-D: (ULP 7.1) Detected use of global variable "stateWaitingForCommandByte" within one function "USCI_A0_ISR". Recommend placing variable in the function locally
+"../RS485.c", line 16: remark #1534-D: (ULP 7.1) Detected use of global variable "stateWaitingForDataByte" within one function "USCI_A0_ISR". Recommend placing variable in the function locally
+Finished building: "../RS485.c"
+ 
+Building target: "ScoreBoard.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ScoreBoard.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ScoreBoard_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ScoreBoard.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ScoreBoard.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 63: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 69: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 75: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 81: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 87: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 93: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 99: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 34: remark #1535-D: (ULP 8.1) variable "Sek_count" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 43: remark #1535-D: (ULP 8.1) variable "bufferIndex" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building file: "../global.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="global.d_raw"  "../global.c"
+Finished building: "../global.c"
+ 
+Building file: "../Init.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="Init.d_raw"  "../Init.c"
+Finished building: "../Init.c"
+ 
+Building file: "../RS485.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="RS485.d_raw"  "../RS485.c"
+"../RS485.c", line 51: warning #121-D: return value type does not match the function type
+"../RS485.c", line 66: warning #2170-D: use of a const variable in a constant expression is nonstandard in C
+"../RS485.c", line 74: warning #2170-D: use of a const variable in a constant expression is nonstandard in C
+"../RS485.c", line 81: warning #2170-D: use of a const variable in a constant expression is nonstandard in C
+"../RS485.c", line 93: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../RS485.c", line 93: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"..\global.h", line 5: remark #1535-D: (ULP 8.1) variable "RS485RX_BUFFER_DATA_PRESENT" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../RS485.c", line 14: remark #1534-D: (ULP 7.1) Detected use of global variable "stateWaitingForAddressByte" within one function "USCI_A0_ISR". Recommend placing variable in the function locally
+"../RS485.c", line 15: remark #1534-D: (ULP 7.1) Detected use of global variable "stateWaitingForCommandByte" within one function "USCI_A0_ISR". Recommend placing variable in the function locally
+"../RS485.c", line 16: remark #1534-D: (ULP 7.1) Detected use of global variable "stateWaitingForDataByte" within one function "USCI_A0_ISR". Recommend placing variable in the function locally
+Finished building: "../RS485.c"
+ 
+Building file: "../Timer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+"../Timer.c", line 12: remark #1534-D: (ULP 7.1) Detected use of global variable "MaxButtonCount" within one function "TIMER1_A1_ISR". Recommend placing variable in the function locally
+"../Timer.c", line 13: remark #1534-D: (ULP 7.1) Detected use of global variable "ButtonPressed" within one function "TIMER1_A1_ISR". Recommend placing variable in the function locally
+Finished building: "../Timer.c"
+ 
+Building file: "../blinker.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blinker.d_raw"  "../blinker.c"
+Finished building: "../blinker.c"
+ 
+Building file: "../handledatabuffer.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/data/projects/Point tavle/Git/ScoreBoard/ScoreBoard" --include_path="C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="handledatabuffer.d_raw"  "../handledatabuffer.c"
+"../handledatabuffer.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 139: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../handledatabuffer.c", line 156: remark #1537-D: (ULP 9.1) Function parameter command (type "struct commandStruct") is being passed by value and should be passed by reference using pointer
+Finished building: "../handledatabuffer.c"
+ 
+Building target: "ScoreBoard.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5419A__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ScoreBoard.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.8.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ScoreBoard_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ScoreBoard.out" "./Init.obj" "./RS485.obj" "./Timer.obj" "./blinker.obj" "./global.obj" "./handledatabuffer.obj" "./main.obj" "../lnk_msp430f5419a.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port F in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ScoreBoard.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ScoreBoard ****
+
+"C:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'ScoreBoard.out' is up to date.
+
+**** Build Finished ****
